@@ -119,6 +119,8 @@
   text-align: center;
   background-color: #000;
   border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 #tooltip.on
@@ -129,4 +131,11 @@
 #tooltip.off
 {
   display: none;
+}
+
+#tooltip .tooltip-close{
+    text-align: right;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
 }

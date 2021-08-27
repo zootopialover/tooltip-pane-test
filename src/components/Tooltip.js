@@ -29,7 +29,7 @@ export default class ToolTip extends React.Component {
       <div id="tooltip" ref={this.tooltipRef} className={Object.keys(classNames).join(" ")} style={style}>
         <div className="tooltip-arrow"></div>
         <div className="tooltip-inner">
-          <div className="tooltip-close"></div>
+          <div className="tooltip-close" onClick={() => this.hide()}>X</div>
           {this.props.children}
         </div>
       </div>

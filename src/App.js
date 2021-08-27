@@ -19,7 +19,7 @@ class App extends React.Component {
     this.handleOnMouseOut = this.handleOnMouseOut.bind(this);
   }
   handleOnMouseOut(evt) {
-    this.toolTip.current.hide();
+    // this.toolTip.current.hide();
   }
   handleOnMouseOver(evt) {
     this.toolTip.current.show(evt);
